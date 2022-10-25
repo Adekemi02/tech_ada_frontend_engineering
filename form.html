@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        /* text-align: center; */
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        /* border-radius: 8px; */
+    }
+    fieldset {
+        width: 80%;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <form action="" method="" target="_blank" autocomplete="on">
+        <fieldset>
+            <legend>Form Field</legend>
+
+            <div class="form-group">
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName" placeholder="Enter your first name">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input type="text" name="lastName" placeholder="Enter your last name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="nano@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter your password">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" name="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="gender"> Select gender </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Select track</p>
+                <div>
+                    <input type="checkbox" name="track" id="frontEnd" value="Frontend">
+                    <label for="frontEnd">Frontend Engineering</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="track" id="backEnd" value="Backend">
+                    <label for="backEnd">Backend Engineering</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="track" id="data" value="Data">
+                    <label for="data">Data Science/Analytics</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="track" id="product" value="Product">
+                    <label for="product"> Product Design</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Favorite Language</p>
+                <div>
+                    <input type="radio" name="java" id="java" value="Java">
+                    <label for="java"> Java </label>
+                </div>
+                <div>
+                    <input type="radio" name="javascript" id="javascript" value="Javascript">
+                    <label for="javascript"> Javascript </label>
+                </div>
+                <div>
+                    <input type="radio" name="python" id="python" value="Python">
+                    <label for="python"> Python </label>
+                </div>
+                <div>
+                    <input type="radio" name="php" id="php" value="PHP">
+                    <label for="php"> PHP </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" name="submit" id="btn" value="Submit">
+            </div>
+            
+        </fieldset>
+
+    </form>
+</body>
+</html>
